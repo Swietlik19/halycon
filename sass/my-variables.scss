@@ -1,0 +1,73 @@
+/* ПОДКЛЮЧЕНИЕ ШРИФТОВ  */
+@font-face {
+  font-family: "GothamRounded";
+  src: url("../fonts/gothamrounded-book.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamRounded_Medium";
+  src: url("../fonts/gothamrounded-medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GothamRounded_MediumItalic";
+  src: url("../fonts/gothamrounded-mediumitalic.otf") format("truetype");
+  font-style: italic;
+  font-weight: 500;
+}
+/* . подключение шрифтов  */
+
+
+// ШРИФТЫ
+$x-font-gotham:                     'GothamRounded', sans-serif;
+$x-font-gotham-medium:              'GothamRounded_Medium', sans-serif;
+$x-font-gotham-medium-italic:       'GothamRounded_MediumItalic', sans-serif;
+
+$font-family-base:                   $x-font-gotham;
+$font-family-base--medium:           $x-font-gotham-medium;
+$font-family-base--medium-italic:    $x-font-gotham-medium-italic;
+// . шрифты
+
+// ЦВЕТА
+
+$cyan:                #3dc9b3;
+$gray-300:            #f3f5f8;
+$gray-600:            #a1a9b0;
+$gray-700:            #8c9398;
+$gray-900:            #353535;
+
+$primary:             $cyan;
+$primary--hover:      #309383;
+
+$body-color:          $gray-700;
+$body-bg:             #fff;
+
+$title-color:         #000;
+$link-color:          #fff;
+
+$secondary-bg:        $gray-300;
+$secondary-color:     $gray-900;
+
+$text-muted:          $gray-600;
+// . цвета
+
+
+// Шпоргалка по @include media-breakpoint-down
+// @include media-breakpoint-down(xs)
+// @media (max-width: 575.98px) { ... }
+
+// @include media-breakpoint-down(sm)
+// @media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// @include media-breakpoint-down(md)
+// @media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// @include media-breakpoint-down(lg)
+// @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// @include media-breakpoint-down(xl)
+// @media (min-width: 1200px) { ... }
+
+

@@ -1,0 +1,32 @@
+.about {
+  padding: {
+    top: 107px;
+    bottom: 117px;
+  }
+
+  background-color: $secondary-bg;
+
+  .title2 {
+    margin-bottom: 26px;
+  }
+
+  .hr {
+    margin-bottom: 64px;
+  }
+
+  &__text {
+    font-family: $font-family-base--medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.142857142857143em; /* 30px / 14px */
+    letter-spacing: 0.01em;
+
+    b {
+      color: $secondary-color;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+
+  }
+}

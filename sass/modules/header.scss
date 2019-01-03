@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  height: 800px;
+  padding-top: 56px;
+
+  background-color: $secondary-bg;
+  background-image: url(../img/bg-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__title {
+    padding-top: 130px;
+  }
+
+  .title1 {
+    margin-bottom: 25px;
+  }
+
+  .desc {
+    margin-bottom: 65px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 600px;
+
+    &__title {
+      padding-top: 90px;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    height: 500px;
+
+    &__title {
+      padding-top: 50px;
+    }
+  }
+}

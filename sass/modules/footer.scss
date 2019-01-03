@@ -1,0 +1,30 @@
+.footer {
+  padding: {
+    top: 55px;
+    bottom: 51px;
+  }
+
+  background-color: #242830;
+
+  &__link {
+    display: inline-block;
+    padding: 0 8px;
+
+    font-size: 14px;
+    line-height: 1.428571428571429em; /* 20px / 14px */
+    color: $body-color;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  span {
+    color: #fff;
+  }
+}

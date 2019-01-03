@@ -1,0 +1,107 @@
+.slider {
+  position: relative;
+
+  .row {
+    [class*="col-"]:nth-of-type(1) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__bg1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+
+    background-color: $secondary-bg;
+  }
+
+  &__img {
+    position: relative;
+    height: 100%;
+
+    background-color: $secondary-bg;
+    background-image: url(../img/bg-responsive.png),
+                      url(../img/bg-shadow.png);
+    background-repeat: no-repeat;
+    background-position: left center, 120% center;
+
+    z-index: 1;
+  }
+
+  &__desc {
+    padding-top: 134px;
+
+    z-index: 3;
+  }
+
+  .title2 {
+    margin-bottom: 26px;
+  }
+
+  .hr {
+    margin-bottom: 40px;
+
+    &__arrow {
+      &::before,
+      &::after {
+        width: 170px;
+      }
+    }
+  }
+
+  &__text {
+    margin-bottom: 25px;
+
+    font-family: $font-family-base--medium;
+    font-size: 14px;
+    line-height: 1.428571428571429em; /* 20px / 14px */
+    font-weight: 500;
+    text-align: justify;
+
+    &:last-of-type {
+      margin-bottom: 127px;
+    }
+  }
+
+  &__controls {
+    padding-bottom: 134px;
+
+    list-style: none;
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 17px;
+
+    background-color: #fff;
+    border: 2.0px solid #c9cbca;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @include myTransition;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover {
+      border-color: #212024;
+    }
+
+    &--active {
+      background-color: #212024;
+
+      &:hover {
+        border-color: #c9cbca;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+
+  }
+}
