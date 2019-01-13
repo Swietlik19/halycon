@@ -6,13 +6,13 @@
   font-weight: normal;
 }
 @font-face {
-  font-family: "GothamRounded_Medium";
+  font-family: "GothamRounded";
   src: url("../fonts/gothamrounded-medium.otf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
-  font-family: "GothamRounded_MediumItalic";
+  font-family: "GothamRounded";
   src: url("../fonts/gothamrounded-mediumitalic.otf") format("truetype");
   font-style: italic;
   font-weight: 500;
@@ -22,12 +22,8 @@
 
 // ШРИФТЫ
 $x-font-gotham:                     'GothamRounded', sans-serif;
-$x-font-gotham-medium:              'GothamRounded_Medium', sans-serif;
-$x-font-gotham-medium-italic:       'GothamRounded_MediumItalic', sans-serif;
 
 $font-family-base:                   $x-font-gotham;
-$font-family-base--medium:           $x-font-gotham-medium;
-$font-family-base--medium-italic:    $x-font-gotham-medium-italic;
 // . шрифты
 
 // ЦВЕТА

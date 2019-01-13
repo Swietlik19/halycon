@@ -1,0 +1,44 @@
+.team {
+  padding: {
+    top: 80px;
+  }
+
+  .title2 {
+    margin-bottom: 26px;
+  }
+
+  .hr {
+    margin-bottom: 61px;
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+
+    svg {
+      width: 200px;
+      height: 218px;
+    }
+  }
+
+  .title3 {
+    margin-bottom: 47px;
+
+    &::after {
+      bottom: -18px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.428571428571429; /* 20px / 14px */
+    font-weight: 500;
+    text-align: center;
+  }
+
+  @include media-breakpoint-down(sm) {
+
+  }
+}

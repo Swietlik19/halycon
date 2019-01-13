@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Halycon</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Halycon</title><!--link(rel='shortcut icon', href="img/favicon.ico", type="image/x-icon")-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="css/style.min.css?version=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <meta name="format-detection" content="telephone=no">
   </head>
   <body>
-      <div class="header">
+      <section class="preloader text-center" id="preloader">
+        <div class="loader"></div>
+      </section>
+      <header class="header">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -39,7 +41,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </header>
       <main class="main">
           <section class="about" id="about">
             <div class="container">
@@ -163,8 +165,62 @@
             </div>
           </section>
           <section class="cta text-center"><a class="button button--cta" href="#">ignite your passion</a></section>
+          <section class="team" id="team">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 ml-auto mr-auto text-center">
+                  <h2 class="title2">We’re a team that adore what we do</h2>
+                    <div class="hr text-center"><span class="hr__arrow ml-auto mr-auto"></span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="team__member">
+                    <div class="team__photo">
+                      <svg x="0px" y="0px" viewBox="0 0 1000 1000">
+                        <path fill="url(#pattern1)" d="M499.9,10c-24.5,0-49.1,9.7-82.8,29L141.9,197.9c-67,38.8-82.5,65.7-82.5,143.3V659c0,77.4,15.5,104.4,82.5,143.3l275.4,158.9c33.7,19.2,58.2,28.9,82.8,28.9s49.1-9.7,82.8-28.9l275.3-158.9c66.9-38.8,82.5-65.7,82.5-143.3V341.2c0-77.5-15.6-104.5-82.5-143.3L582.6,39C548.9,19.7,524.4,10,499.9,10L499.9,10L499.9,10L499.9,10z"></path>
+                        <pattern id="pattern1" width="100%" height="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image xlink:href="img/photo-1.jpg" height="1" width="1" preserveAspectRatio="xMidYMid slice"></image>
+                        </pattern>
+                      </svg>
+                    </div>
+                    <h3 class="title3">Jon Snow</h3>
+                    <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="team__member">
+                    <div class="team__photo">
+                      <svg x="0px" y="0px" viewBox="0 0 1000 1000">
+                        <path fill="url(#pattern2)" d="M499.9,10c-24.5,0-49.1,9.7-82.8,29L141.9,197.9c-67,38.8-82.5,65.7-82.5,143.3V659c0,77.4,15.5,104.4,82.5,143.3l275.4,158.9c33.7,19.2,58.2,28.9,82.8,28.9s49.1-9.7,82.8-28.9l275.3-158.9c66.9-38.8,82.5-65.7,82.5-143.3V341.2c0-77.5-15.6-104.5-82.5-143.3L582.6,39C548.9,19.7,524.4,10,499.9,10L499.9,10L499.9,10L499.9,10z"></path>
+                        <pattern id="pattern2" width="100%" height="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image xlink:href="img/photo-2.jpg" height="1" width="1" preserveAspectRatio="xMidYMid slice"></image>
+                        </pattern>
+                      </svg>
+                    </div>
+                    <h3 class="title3">Cersei Lannister</h3>
+                    <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="team__member">
+                    <div class="team__photo">
+                      <svg x="0px" y="0px" viewBox="0 0 1000 1000">
+                        <path fill="url(#pattern3)" d="M499.9,10c-24.5,0-49.1,9.7-82.8,29L141.9,197.9c-67,38.8-82.5,65.7-82.5,143.3V659c0,77.4,15.5,104.4,82.5,143.3l275.4,158.9c33.7,19.2,58.2,28.9,82.8,28.9s49.1-9.7,82.8-28.9l275.3-158.9c66.9-38.8,82.5-65.7,82.5-143.3V341.2c0-77.5-15.6-104.5-82.5-143.3L582.6,39C548.9,19.7,524.4,10,499.9,10L499.9,10L499.9,10L499.9,10z"></path>
+                        <pattern id="pattern3" width="100%" height="100%" patternContentUnits="objectBoundingBox" viewBox="0 0 1 1" preserveAspectRatio="xMidYMid slice">
+                          <image xlink:href="img/photo-3.jpg" height="1" width="1" preserveAspectRatio="xMidYMid slice"></image>
+                        </pattern>
+                      </svg>
+                    </div>
+                    <h3 class="title3">Jamie Lannister</h3>
+                    <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
       </main>
-      <div class="footer">
+      <footer class="footer">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -172,7 +228,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     <script src="js/script.js?version=1"></script>
   </body>
 </html>

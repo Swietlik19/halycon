@@ -7,13 +7,13 @@
   font-weight: normal; }
 
 @font-face {
-  font-family: "GothamRounded_Medium";
+  font-family: "GothamRounded";
   src: url("../fonts/gothamrounded-medium.otf") format("truetype");
   font-style: normal;
   font-weight: 500; }
 
 @font-face {
-  font-family: "GothamRounded_MediumItalic";
+  font-family: "GothamRounded";
   src: url("../fonts/gothamrounded-mediumitalic.otf") format("truetype");
   font-style: italic;
   font-weight: 500; }
@@ -5578,6 +5578,9 @@ input[type="button"].btn-block {
     margin-bottom: -1px; }
 
 /* ОБЩИЕ СТИЛИ */
+body {
+  background-color: #44474E; }
+
 img {
   width: 100%;
   vertical-align: middle; }
@@ -5601,7 +5604,6 @@ ul {
 
 .title2 {
   margin: 0 auto;
-  font-family: "GothamRounded_Medium", sans-serif;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.15em;
@@ -5612,11 +5614,11 @@ ul {
 .title3 {
   position: relative;
   margin: 0 auto;
-  font-family: "GothamRounded_Medium", sans-serif;
   font-size: 15px;
   line-height: 1.333333333333333em;
   /* 20px / 15px */
   font-weight: 500;
+  letter-spacing: 0.15em;
   color: #353535;
   text-transform: uppercase;
   text-align: center; }
@@ -5638,7 +5640,6 @@ ul {
   letter-spacing: 0.15em;
   color: #8c9398; }
   .desc i {
-    font-family: "GothamRounded_MediumItalic", sans-serif;
     font-weight: 500;
     font-style: italic; }
   @media (max-width: 575.98px) {
@@ -5708,6 +5709,72 @@ ul {
         background-color: #f3f5f8; } }
 
 /* . переопределение классов Bootstrap */
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #44474E;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+  z-index: 100; }
+  .preloader .percentage {
+    font-family: sans-serif; }
+  .preloader--faded {
+    visibility: hidden;
+    opacity: 0; }
+  .preloader .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80px;
+    height: 80px;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+    .preloader .loader__circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      background-color: #2F3133;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      -webkit-animation: circle-delay infinite ease-in-out;
+              animation: circle-delay infinite ease-in-out; }
+
+@-webkit-keyframes circle-delay {
+  0%, 39%, 100% {
+    background-color: #2F3133; }
+  40% {
+    background-color: #ebf1f7; } }
+
+@keyframes circle-delay {
+  0%, 39%, 100% {
+    background-color: #2F3133; }
+  40% {
+    background-color: #ebf1f7; } }
+
 .button {
   display: inline-block;
   padding: 20px 35px;
@@ -5756,7 +5823,6 @@ ul {
           -ms-transform: rotate(360deg);
               transform: rotate(360deg); }
   .button--cta {
-    font-family: "GothamRounded_Medium", sans-serif;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.15em;
@@ -5808,7 +5874,6 @@ ul {
   .about .hr {
     margin-bottom: 64px; }
   .about__text {
-    font-family: "GothamRounded_Medium", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 2.142857142857143em;
@@ -5859,7 +5924,6 @@ ul {
     .features .title3::after {
       bottom: -26px; }
   .features__text {
-    font-family: "GothamRounded_Medium", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.428571428571429em;
@@ -5897,7 +5961,6 @@ ul {
       width: 170px; }
   .slider__text {
     margin-bottom: 25px;
-    font-family: "GothamRounded_Medium", sans-serif;
     font-size: 14px;
     line-height: 1.428571428571429em;
     /* 20px / 14px */
@@ -5964,13 +6027,11 @@ ul {
     color: #fff;
     text-transform: uppercase; }
     .promo__paragraph i {
-      font-family: "GothamRounded_MediumItalic", sans-serif;
       font-weight: 500;
       font-style: italic; }
 
 .advantages {
-  padding-top: 104px;
-  padding-bottom: 109px; }
+  padding-top: 104px; }
   .advantages__item {
     margin-bottom: 40px; }
   .advantages__img {
@@ -6024,7 +6085,6 @@ ul {
       margin-bottom: 12px;
       font-size: 30px; }
     .advantages__img-more span {
-      font-family: "GothamRounded_Medium", sans-serif;
       font-size: 15px;
       font-weight: 500;
       text-transform: uppercase; }
@@ -6037,7 +6097,6 @@ ul {
     .advantages .title3::after {
       bottom: -18px; }
   .advantages__text {
-    font-family: "GothamRounded_Medium", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.428571428571429em;
@@ -6050,6 +6109,40 @@ ul {
   padding-top: 65px;
   padding-bottom: 61px;
   background-color: #242830; }
+
+.team {
+  padding-top: 80px; }
+  .team .title2 {
+    margin-bottom: 26px; }
+  .team .hr {
+    margin-bottom: 61px; }
+  .team__photo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 45px; }
+    .team__photo svg {
+      width: 200px;
+      height: 218px; }
+  .team .title3 {
+    margin-bottom: 47px; }
+    .team .title3::after {
+      bottom: -18px; }
+  .team__text {
+    font-size: 14px;
+    line-height: 1.428571428571429;
+    /* 20px / 14px */
+    font-weight: 500;
+    text-align: center; }
 
 .footer {
   padding-top: 55px;
@@ -6071,10 +6164,5 @@ ul {
     color: #fff; }
 
 /* Общие добавочные классы, с максимальным  приоритетом   */
-.clearfix:after {
-  content: '';
-  display: block;
-  clear: both; }
-
 .invisible {
   display: none; }

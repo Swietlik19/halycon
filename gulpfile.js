@@ -61,13 +61,23 @@ gulp.task('pugHTML', function () {
     .pipe(gulp.dest('build'));
 });*/
 
-gulp.task('copyJS', function () {
+gulp.task('copyJSClear', function () {
+  return gulp.src(paths.js.src)
+    .pipe(plumber())
+    .pipe(rigger()) //Прогоним через rigger
+    .pipe(plumber())
+    .pipe(gulp.dest(paths.js.dest));
+});
+
+
+gulp.task('copyJS', ['copyJSClear'], function () {
   return gulp.src(paths.js.src)
     .pipe(plumber())
     .pipe(rigger()) //Прогоним через rigger
     .pipe(plumber())
     .pipe(uglify()) //Сожмем наш js
     .pipe(plumber())
+    .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
     .pipe(gulp.dest(paths.js.dest));
 });
 

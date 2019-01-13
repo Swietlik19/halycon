@@ -1,12 +1,4 @@
 /* Общие добавочные классы, с максимальным  приоритетом   */
-.clearfix {
-    &:after {
-        content: '';
-        display: block;
-        clear: both;
-    }
-}
-
 .invisible {
     display: none;
 }
