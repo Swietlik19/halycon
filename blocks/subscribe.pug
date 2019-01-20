@@ -1,0 +1,15 @@
+mixin subscribe(modifier)
+  section.subscribe.parallax(id="subscribe")
+    .container
+      .row
+        .col-md-12
+          .subscribe__content
+            i.fa.fa-paper-plane
+            p.subscribe__title subscribe to stay in the loop
+            form.subscribe__form
+              input.subscribe__form-email(type="text",name="email",id="email")
+              input.button(type="submit",value="Send")
+
+    //- добавить ссылку
+    a.button.button--round(href="#")
+      i.fa.fa-chevron-up

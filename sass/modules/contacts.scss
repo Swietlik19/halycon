@@ -1,0 +1,92 @@
+.contacts {
+  padding: {
+    top: 120px;
+    bottom: 113px;
+  }
+
+  background-color: $secondary-bg;
+
+  .title2 {
+    margin-bottom: 22px;
+  }
+
+  .hr {
+    margin-bottom: 92px;
+  }
+
+  &__list {
+    margin-bottom: 99px;
+  }
+  &__item {
+    padding: {
+      top: 62px;
+      bottom: 26px;
+    }
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 3px 0px 0px #f0f1f4;
+
+    .fa {
+      position: absolute;
+      top: 29px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Font Awesome 5 Brands','Font Awesome 5 Free';
+      font-size: 20px;
+      line-height: 20px;
+      color: #242830;
+    }
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: $primary;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  &__value {
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  &__social {
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+    }
+    &-item {
+      margin-right: 21px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    .button {
+      width: 40px;
+      height: 40px;
+      background-color: #242830;
+      border: none;
+
+      .fa {
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        color: #fff;
+      }
+
+      &:hover {
+        background-color: #fff;
+
+        .fa {
+          color: #242830;
+        }
+      }
+    }
+  }
+}

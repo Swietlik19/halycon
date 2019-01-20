@@ -11,10 +11,10 @@
   background-color: $primary;
   border-radius: 5px;
   box-shadow: 0 3px 0 $primary--hover;
+  cursor: pointer;
 
   @include myTransition;
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
     color: $link-color;
     background-color: $primary--hover;
@@ -32,7 +32,7 @@
     border-radius: 50%;
     box-shadow: none;
 
-    i {
+    .fa {
       position: absolute;
       top: 50%;
       left: 52%;
@@ -40,10 +40,10 @@
       display: inline-block;
       text-align: center;
       transform: translate(-50%,-50%);
+      z-index: 100;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       box-shadow: none;
 
       transform: rotate(360deg);

@@ -10,9 +10,7 @@
     <meta name="format-detection" content="telephone=no">
   </head>
   <body>
-      <section class="preloader text-center" id="preloader">
-        <div class="loader"></div>
-      </section>
+    <!--+preloader-->
       <header class="header">
         <div class="container">
           <div class="row">
@@ -113,12 +111,14 @@
               </div>
             </div>
           </section>
-          <section class="promo" id="promo">
+          <section class="promo parallax" id="promo">
             <div class="container">
-              <div class="row col-md-12">
-                <div class="promo__text text-center ml-auto mr-auto">
-                  <p class="promo__title">i got 99 problems</p>
-                  <p class="promo__paragraph">but<i> design</i> ‘aint one</p><a class="button button--round" href="#"><i class="fa fa-chevron-down"></i></a>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="promo__text text-center ml-auto mr-auto">
+                    <p class="promo__title">i got 99 problems</p>
+                    <p class="promo__paragraph">but<i> design</i> ‘aint one</p><a class="button button--round" href="#"><i class="fa fa-chevron-down"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -186,6 +186,11 @@
                     </div>
                     <h3 class="title3">Jon Snow</h3>
                     <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    <ul class="team__social">
+                      <li class="team__social-item"><a class="team__social-link button button--round" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li class="team__social-item"><a class="team__social-link button button--round" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li class="team__social-item"><a class="team__social-link button button--round" href="#"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -200,6 +205,11 @@
                     </div>
                     <h3 class="title3">Cersei Lannister</h3>
                     <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    <ul class="team__social">
+                      <li class="team__social-item"><a class="team__social-link button button--round" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li class="team__social-item"><a class="team__social-link button button--round" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li class="team__social-item"><a class="team__social-link button button--round" href="#"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -214,7 +224,73 @@
                     </div>
                     <h3 class="title3">Jamie Lannister</h3>
                     <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    <ul class="team__social">
+                      <li class="team__social-item"><a class="team__social-link button button--round" href="#"><i class="fa fa-dribbble"></i></a></li>
+                      <li class="team__social-item"><a class="team__social-link button button--round" href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li class="team__social-item"><a class="team__social-link button button--round" href="#"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
                   </div>
+                </div>
+              </div>
+              <div class="row">
+                <ul class="slider__controls slider__controls--adaptive ml-auto mr-auto d-flex justify-content-center">
+                  <li class="slider__dot slider__dot--adaptive slider__dot--active"></li>
+                  <li class="slider__dot slider__dot--adaptive"></li>
+                  <li class="slider__dot slider__dot--adaptive"></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="subscribe parallax" id="subscribe">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="subscribe__content"><i class="fa fa-paper-plane"></i>
+                    <p class="subscribe__title">subscribe to stay in the loop</p>
+                    <form class="subscribe__form">
+                      <input class="subscribe__form-email" type="text" name="email" id="email">
+                      <input class="button" type="submit" value="Send">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div><a class="button button--round" href="#"><i class="fa fa-chevron-up"></i></a>
+          </section>
+          <section class="contacts" attributes>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 ml-auto mr-auto text-center">
+                  <h2 class="title2">drop us a line</h2>
+                    <div class="hr text-center"><span class="hr__arrow ml-auto mr-auto"></span></div>
+                </div>
+              </div>
+              <div class="row contacts__list">
+                <div class="col-md-4">
+                  <div class="contacts__item"><i class="fa fa-map-marker-alt"></i>
+                    <h3 class="contacts__title">Address</h3>
+                    <div class="contacts__value">Level 6, 23 Pitt St, Sydney</div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="contacts__item"><i class="fa fa-mobile-alt"></i>
+                    <h3 class="contacts__title">Phone</h3>
+                    <div class="contacts__value">+61 9 211 3741</div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="contacts__item"><i class="fa fa-paper-plane"></i>
+                    <h3 class="contacts__title">Email</h3>
+                    <div class="contacts__value">hey@halcyon.com.au</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row contacts__social">
+                <div class="col-12">
+                  <ul class="contacts__social-list">
+                    <li class="contacts__social-item"><a class="contacts__social-link button button--round" href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li class="contacts__social-item"><a class="contacts__social-link button button--round" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="contacts__social-item"><a class="contacts__social-link button button--round" href="#"><i class="fa fa-envelope"></i></a></li>
+                  </ul>
                 </div>
               </div>
             </div>

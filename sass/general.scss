@@ -119,9 +119,36 @@ ul {
   }
 }
 
+.parallax {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #28272e;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(36,40,48,0.7);
+    z-index: -1;
+  }
+}
+
 /* . Общие стили  */
 
-/* Переопределение классов Bootstrap */
+/* Переопределение классов  */
+.fa {
+  font-family: 'Font Awesome 5 Brands','Font Awesome 5 Free';
+}
+
+
 .navbar {
   position: relative;
 
@@ -146,7 +173,7 @@ ul {
   .navbar-toggler-icon {
     background: none;
 
-    &:before {
+    &::before {
       content: '\f0c9';
       font-family: 'Font Awesome 5 Free';
       font-size: 30px;
@@ -177,4 +204,4 @@ ul {
     }
   }
 }
-/* . переопределение классов Bootstrap */
+/* . переопределение классов */

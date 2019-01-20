@@ -1,0 +1,35 @@
+mixin contacts(modifier)
+  section.contacts(attributes)
+    .container
+      .row
+        .col-md-12.ml-auto.mr-auto.text-center
+          h2.title2 drop us a line
+          +hr
+      .row.contacts__list
+        .col-md-4
+          .contacts__item
+            i.fa.fa-map-marker-alt
+            h3.contacts__title Address
+            .contacts__value Level 6, 23 Pitt St, Sydney
+        .col-md-4
+          .contacts__item
+            i.fa.fa-mobile-alt
+            h3.contacts__title Phone
+            .contacts__value +61 9 211 3741
+        .col-md-4
+          .contacts__item
+            i.fa.fa-paper-plane
+            h3.contacts__title Email
+            .contacts__value hey@halcyon.com.au
+      .row.contacts__social
+        .col-12
+          ul.contacts__social-list
+            li.contacts__social-item
+              a.contacts__social-link.button.button--round(href="#")
+                i.fa.fa-dribbble
+            li.contacts__social-item
+              a.contacts__social-link.button.button--round(href="#")
+                i.fa.fa-twitter
+            li.contacts__social-item
+              a.contacts__social-link.button.button--round(href="#")
+                i.fa.fa-envelope
