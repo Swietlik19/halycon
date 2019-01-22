@@ -27,4 +27,8 @@
   span {
     color: #fff;
   }
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
 }

@@ -26,6 +26,9 @@
   }
 
   @include media-breakpoint-down(sm) {
-
+    padding: {
+      top: 70px;
+      bottom: 65px;
+    }
   }
 }

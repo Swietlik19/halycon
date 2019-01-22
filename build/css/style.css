@@ -20,6 +20,7 @@
 
 /* . подключение шрифтов  */
 /* Стандартный transition для hover-анимаций */
+/* Миксим для Font Awesome */
 /* Миксин замены цвета placeholder у input.
 Нужно добавить в стилях элемента конструкцию вида @include placeholder(#000); */
 :root {
@@ -5668,6 +5669,12 @@ ul {
       right: 52px; }
     .hr__arrow::after {
       left: 52px; }
+  @media (max-width: 767.98px) {
+    .hr__arrow::before, .hr__arrow::after {
+      width: 180px; } }
+  @media (max-width: 575.98px) {
+    .hr__arrow::before, .hr__arrow::after {
+      width: 120px; } }
 
 .parallax {
   position: relative;
@@ -5708,8 +5715,8 @@ ul {
   .navbar .navbar-toggler-icon {
     background: none; }
     .navbar .navbar-toggler-icon::before {
+      font-family: 'Font Awesome 5 Brands','Font Awesome 5 Free';
       content: '\f0c9';
-      font-family: 'Font Awesome 5 Free';
       font-size: 30px;
       line-height: normal;
       font-weight: 600;
@@ -5717,16 +5724,17 @@ ul {
       -webkit-transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
       -o-transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
       transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); }
-  @media (max-width: 767.98px) {
-    .navbar-collapse {
-      position: absolute;
-      width: 100%;
-      top: 45px;
-      right: 0;
-      z-index: 2; } }
+  .navbar-collapse {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    z-index: 2; }
+    @media (max-width: 991.98px) {
+      .navbar-collapse {
+        width: 100%; } }
   .navbar-nav {
     padding-right: 10px; }
-    @media (max-width: 767.98px) {
+    @media (max-width: 991.98px) {
       .navbar-nav {
         background-color: #f3f5f8; } }
 
@@ -5905,6 +5913,10 @@ ul {
     letter-spacing: 0.01em; }
     .about__text b {
       color: #353535; }
+  @media (max-width: 767.98px) {
+    .about {
+      padding-top: 70px;
+      padding-bottom: 65px; } }
 
 .features {
   padding-top: 107px;
@@ -5953,6 +5965,13 @@ ul {
     line-height: 1.428571428571429em;
     /* 20px / 14px */
     letter-spacing: 0.01em; }
+  @media (max-width: 767.98px) {
+    .features {
+      padding-top: 70px;
+      padding-bottom: 65px; }
+      .features__icon {
+        width: 130px;
+        height: 130px; } }
 
 .slider {
   position: relative; }
@@ -6015,6 +6034,16 @@ ul {
       background-color: #212024; }
       .slider__dot--active:hover {
         border-color: #c9cbca; }
+  @media (max-width: 767.98px) {
+    .slider__desc {
+      padding-top: 70px; }
+    .slider__controls {
+      padding-bottom: 65px; } }
+  @media (max-width: 575.98px) {
+    .slider__text:last-of-type {
+      margin-bottom: 90px; }
+    .slider .hr__arrow::before, .slider .hr__arrow::after {
+      width: 120px; } }
 
 .promo {
   padding-top: 75px;
@@ -6174,6 +6203,9 @@ ul {
     font-size: 17px; }
   .team .slider__controls {
     padding-bottom: 107px; }
+  @media (max-width: 767.98px) {
+    .team__social {
+      margin-bottom: 65px; } }
 
 .subscribe {
   padding-top: 122px;
@@ -6236,6 +6268,17 @@ ul {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     opacity: 0.8; }
+  @media (max-width: 575.98px) {
+    .subscribe {
+      padding-top: 70px;
+      padding-bottom: 90px; }
+      .subscribe__form {
+        width: 100%; }
+        .subscribe__form-email {
+          width: 100%;
+          margin-bottom: 30px; }
+        .subscribe__form .button {
+          width: 100%; } }
 
 .contacts {
   padding-top: 120px;
@@ -6255,13 +6298,13 @@ ul {
     -webkit-box-shadow: 0px 3px 0px 0px #f0f1f4;
             box-shadow: 0px 3px 0px 0px #f0f1f4; }
     .contacts__item .fa {
+      font-family: 'Font Awesome 5 Brands','Font Awesome 5 Free';
       position: absolute;
       top: 29px;
       left: 50%;
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
               transform: translateX(-50%);
-      font-family: 'Font Awesome 5 Brands','Font Awesome 5 Free';
       font-size: 20px;
       line-height: 20px;
       color: #242830; }
@@ -6309,6 +6352,14 @@ ul {
       background-color: #fff; }
       .contacts__social .button:hover .fa {
         color: #242830; }
+  @media (max-width: 767.98px) {
+    .contacts {
+      padding-top: 70px;
+      padding-bottom: 65px; }
+      .contacts__list {
+        margin-bottom: 30px; }
+      .contacts__item {
+        margin-bottom: 30px; } }
 
 .footer {
   padding-top: 55px;
@@ -6328,6 +6379,9 @@ ul {
       text-decoration: none; }
   .footer span {
     color: #fff; }
+  @media (max-width: 767.98px) {
+    .footer {
+      text-align: center; } }
 
 /* Общие добавочные классы, с максимальным  приоритетом   */
 .invisible {

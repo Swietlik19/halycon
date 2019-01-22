@@ -101,6 +101,30 @@
   }
 
   @include media-breakpoint-down(sm) {
+    &__desc {
+      padding-top: 70px;
+    }
 
+    &__controls {
+      padding-bottom: 65px;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    &__text {
+
+      &:last-of-type {
+        margin-bottom: 90px;
+      }
+    }
+    .hr {
+
+      &__arrow {
+        &::before,
+        &::after {
+          width: 120px;
+        }
+      }
+    }
   }
 }

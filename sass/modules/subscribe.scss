@@ -69,4 +69,23 @@
 
     opacity: 0.8;
   }
+
+  @include media-breakpoint-down(xs) {
+    padding: {
+      top: 70px;
+      bottom: 90px;
+    }
+
+    &__form {
+      width: 100%;
+
+      &-email {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .button {
+        width: 100%;
+      }
+    }
+  }
 }

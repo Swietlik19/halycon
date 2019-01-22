@@ -78,6 +78,14 @@
   }
 
   @include media-breakpoint-down(sm) {
+    padding: {
+      top: 70px;
+      bottom: 65px;
+    }
 
+    &__icon {
+      width: 130px;
+      height: 130px;
+    }
   }
 }

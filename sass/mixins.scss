@@ -4,6 +4,12 @@
   transition: 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
 }
 
+/* Миксим для Font Awesome */
+@mixin fa {
+  font-family: 'Font Awesome 5 Brands','Font Awesome 5 Free';
+}
+
+
 
 /* Миксин замены цвета placeholder у input.
 Нужно добавить в стилях элемента конструкцию вида @include placeholder(#000); */
