@@ -21,8 +21,6 @@
 /* . подключение шрифтов  */
 /* Стандартный transition для hover-анимаций */
 /* Миксим для Font Awesome */
-/* Миксин замены цвета placeholder у input.
-Нужно добавить в стилях элемента конструкцию вида @include placeholder(#000); */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -5674,7 +5672,7 @@ ul {
       width: 180px; } }
   @media (max-width: 575.98px) {
     .hr__arrow::before, .hr__arrow::after {
-      width: 120px; } }
+      width: 100px; } }
 
 .parallax {
   position: relative;
@@ -6039,11 +6037,14 @@ ul {
       padding-top: 70px; }
     .slider__controls {
       padding-bottom: 65px; } }
+  @media (max-width: 991.98px) {
+    .slider .hr__arrow::before, .slider .hr__arrow::after {
+      width: 120px; } }
   @media (max-width: 575.98px) {
     .slider__text:last-of-type {
       margin-bottom: 90px; }
     .slider .hr__arrow::before, .slider .hr__arrow::after {
-      width: 120px; } }
+      width: 100px; } }
 
 .promo {
   padding-top: 75px;
@@ -6068,6 +6069,11 @@ ul {
     .promo__paragraph i {
       font-weight: 500;
       font-style: italic; }
+  @media (max-width: 575.98px) {
+    .promo__title {
+      font-size: 30px; } }
+  .promo__paragraph {
+    font-size: 20px; }
 
 .advantages {
   padding-top: 104px; }

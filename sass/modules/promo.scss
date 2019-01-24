@@ -33,4 +33,14 @@
       font-style: italic;
     }
   }
+
+  @include media-breakpoint-down(xs) {
+  &__title {
+    font-size: 30px;
+    }
+  }
+
+  &__paragraph {
+    font-size: 20px;
+  }
 }
